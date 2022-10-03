@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import background from './assets/pexels-todd-trapani-1420440.jpg'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ImageBackground>
-        source={}
+      <ImageBackground
+        source={background}
         style={styles.background}
         blurRadius="10"
-        resizeMode="cover"
+        resizeMode="cover">
       </ImageBackground>
       <StatusBar style="auto" />
     </View>
